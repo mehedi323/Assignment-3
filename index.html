@@ -21,22 +21,39 @@
   <!-- header start -->
   <header class="container mx-auto ">
     <section class="p-4 bg-[#F85559] rounded-full   ">
-      <div class="navbar flex  justify-around   ">
-        <div class="">
-          <ul class="flex items-center text-white">
-            <li class="mr-8"><a href="">Home</a></li>
-            <li class="mr-8"><a href="">About Us</a></li>
-            <li class="mr-8"><a href="">Shop</a></li>
-            <li><a href="">All Fruits</a></li>
-          </ul>
-        </div>
+      <div class="navbar flex justify-around   ">
+        <nav class="">
+          <div class="navbar font-bold">
+            <div class="flex-1">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#000] font-medium	">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-[#000] font-medium	">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact </a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
          <div>
-          <div class="flex items-center text-white">
+          <div class="flex lg:flex md:mx-auto items-center text-white">
             <img src="images/logo.png" alt="">
             <a class="btn btn-ghost normal-case text-xl font-bold	">Fruit Burst</a>
           </div>
          </div>
-        <div class="flex ">
+        <div class="flex md:flex ">
           <div class="form-control relative justify-center items-center">
             <input type="text" placeholder="Search here" class="input input-bordered  md:w-auto rounded-full	 bg-white"> 
             <div class="absolute right-4 ">
@@ -46,7 +63,6 @@
         </div>
       </div>
     </section>
-   
   </header>
   <!-- header-end -->
   <!-- main start -->
@@ -54,11 +70,11 @@
     <div class="carousel ml-8 relative">
         <!-- slider-1 -->
         <div id="slide1" class="carousel-item relative w-full">
-          <div class="flex items-center  lg:p-4 gap-20 p-24 ">
+          <div class="flex lg:flex md:mx-auto items-center  lg:p-4 gap-20 p-24 ">
             <div class="relative">
               <img src="/images/banner1.png" class="w-full" />
             </div>
-           <div class="absolute  left-80 top-28 text-center   text-[#fff] ">
+           <div class="absolute   left-80 top-28 text-center   text-[#fff] ">
             <h1 class="text-center font-extrabold text-7xl">Exotic tastes at your <br> doorstep</h1>
             <p class="mb-8 mt-5">We supply highly quality organic products</p>
             <button class="btn-error py-5 px-8 rounded-xl font-extrabold text-[#fff]">Shop Now</button>
@@ -146,7 +162,7 @@
 
       <!-- section deal of the day -->
       <section class="p-24 ">
-        <div class="grid grid-cols-2 justify-around">
+        <div class="grid grid-cols-2 md:mx-auto justify-around">
           <div class="w-3/8">
             <h1 class="text-[#121212] font-extrabold text-4xl">Deal of the day</h1>
             <p class="text-[#424040]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -204,7 +220,7 @@
           </div>
           </div>
           <!-- deal of the day -frout img-2 -->
-           <div class="border-2 text-center py-6">
+           <div class="border-2 text-centerlg:py-12 py-6">
             <div class=" border-2 border-t-0 mb-4 ">
               <div class="ml-20 md:ml-14">
                 <img src="images/fruit7.png" alt="">
@@ -281,7 +297,7 @@
           <div class="card-body text-[#fff]">
             <h2 class="text-5xl font-extrabold text-center">Meet the team section</h2>
             <p class="w-1/2 m-auto text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-            <div class="grid grid-cols-4 grid-flow-col    justify-center content-center ml-28 mb-24">
+            <div class="grid grid-cols-4 grid-flow-col lg:grid-cols-1 md:mx-auto  justify-center content-center ml-28 mb-24">
               <div class="">
                 <img src="images/member1.png" alt="">
                 <h1 class="text-2xl font-medium mt-4">Awlad Hossain</h1>
